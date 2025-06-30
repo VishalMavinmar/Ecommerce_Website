@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Now</title>
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="css/hover-min.css" />
+  <link rel="stylesheet" href="order.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+</head>
+<body>
+
+  <div class="order-container">
+    <h2>Place Your Order</h2>
+    <img src="pizza(1).jpg" alt="Food Item" class="food-img" />
+
+    <form class="order-form" action="order-success.html" method="POST">
+      <label for="food">Selected Food</label>
+      <select name="food" id="food" required>
+        <option value="Pizza">Pizza - $8.00</option>
+        <option value="Burger">Burger - $6.00</option>
+        <option value="Sandwich">Sandwich - $5.00</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" value="1" min="1" required />
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+      <label for="address">Delivery Address</label>
+      <textarea id="address" name="address" rows="4" placeholder="Enter delivery address" required></textarea>
+
+      <input type="submit"  value="confirm" class="btn-primary"/> 
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Vishal Mavinmar | All Rights Reserved | <a href="index.html">Back to Home</a></p>
+  </footer>
+
+ 
+
+</body>
+</html>
