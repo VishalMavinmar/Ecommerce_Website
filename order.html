@@ -16,7 +16,7 @@
     <h2>Place Your Order</h2>
     <img src="pizza(1).jpg" alt="Food Item" class="food-img" />
 
-    <form class="order-form" action="ordersuccess.html" method="POST">
+    <form id="orderForm" action="ordersuccess.html" method="POST">
       <label for="food">Selected Food</label>
       <select name="food" id="food" required>
         <option value="Pizza">Pizza - $8.00</option>
@@ -44,7 +44,13 @@
     <p>&copy; 2025 Vishal Mavinmar | All Rights Reserved | <a href="index.html">Back to Home</a></p>
   </footer>
 
- 
+ <script>
+  document.getElementById("orderForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent real form submission
+    // You could also store data in localStorage/sessionStorage if needed
+    window.location.href = "ordersuccess.html"; // Redirect
+  });
+</script>
 
 </body>
 </html>
