@@ -98,3 +98,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const menuList = document.querySelector('.menu ul');
+
+    toggle.addEventListener('click', () => {
+      if (menuList.style.display === 'flex') {
+        menuList.style.display = 'none';
+      } else {
+        menuList.style.display = 'flex';
+      }
+    });
+  });
+
+     const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu-list");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    
+ 
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menuList = document.getElementById('menu-list');
+
+  toggleBtn.addEventListener('click', () => {
+    menuList.classList.toggle('active');
+  });
+
