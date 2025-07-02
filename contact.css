@@ -95,3 +95,134 @@ body {
             position: relative;
             left: -30px;
         }
+
+        @media (max-width: 768px) {
+  .grid-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .food-menu-img,
+  .food-menu-desc {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu {
+    line-height: initial;
+    position: relative;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fcb69f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .menu ul li {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu ul li:last-of-type {
+    text-align: left;
+  }
+
+  .menu .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c5ce7;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .footer-col {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .categories .float-container,
+  .food-menu-box {
+    height: auto;
+  }
+
+  .categories .float-container img,
+  .food-menu-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .food-search input[type="search"] {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .food-search .btn-primary {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+
+   .social-links {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    /* color: #ffcc00; */
+    text-align: center;
+   }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    position: static;
+    flex-direction: column;
+  }
+ 
+  
+
+}
+
+/* Center footer h3 underline */
+.footer-col h3 {
+  position: relative;
+  text-align: center;
+}
+
+.footer-col h3::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #ff6b6b;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
