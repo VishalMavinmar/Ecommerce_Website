@@ -459,7 +459,7 @@
       color: #fff;
     }
 
-    /* Copyright Section Style End */
+    
 
     /* Bact-To-Top Section Style Start */
     #back-to-top {
@@ -542,9 +542,6 @@
       border-radius: 5px;
     }
 
-    /* Order Page Style End */
-
-    /* Contact Page Style Start */
     .contact,
     .login {
       padding: 65px 0;
@@ -571,3 +568,131 @@
     .badge:empty {
       display: none;
     }
+ 
+
+     @media screen and (max-width: 992px) {
+            
+      
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .food-menu-img,
+            .food-menu-desc {
+                float: none;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
+            .food-menu-desc {
+                margin-top: 15px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .cart-content {
+                width: 100vw;
+                right: 0;
+                left: 0;
+            }
+        }
+
+        .menu-toggle {
+  display: none;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    color: #2f3542;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 30px;
+    z-index: 1001;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 130px;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0;
+    z-index: 999;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .menu ul.active {
+    display: flex;
+  }
+
+  .menu ul li {
+    padding: 0px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+
+  .menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu ul li a {
+    font-size: 15px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+
+  .menu ul li a:hover {
+    color: #e24a4a;
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: px 10px;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
