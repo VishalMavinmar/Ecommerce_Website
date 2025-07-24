@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let cartItems = [];
   let cartTotal = 0;
 
-  // Toggle cart visibility
+ 
   document.getElementById("shopping-cart").addEventListener("click", function () {
     cartContent.classList.toggle("active");
   });
 
-  // Handle Add to Cart
   document.querySelectorAll(".food-menu-box form").forEach(form => {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
