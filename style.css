@@ -258,9 +258,7 @@
       border-radius: 100%;
     }
 
-    /* Navigation Section Style End */
-
-    /* Food Search Section Style Start */
+  
     .food-search {
       background-image: url(search-bg.jpg);
       background-size: cover;
@@ -285,9 +283,7 @@
       border-radius: 0px 5px 5px 0px;
     }
 
-    /* Food Search Section Style End */
-
-    /* Categories Section Style Start */
+ 
     .categories {
       background-image: url(..category-bg1.png);
       background-size: cover;
@@ -322,9 +318,6 @@
       transform: scale(1.2);
     }
 
-    /* Categories Section Style End */
-
-    /* Food Section Style Start */
     .food-menu {
       background-image: url(food-bg.jpg);
       background-size: cover;
@@ -367,9 +360,6 @@
       display: block;
     }
 
-    /* Food Section Style End */
-
-    /* Footer Section Style Start */
     .footer {
       background: #1a1a1a;
       color: #f1f1f1;
